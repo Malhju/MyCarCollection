@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-const HomeStyle = StyleSheet.create({
+const GeneralStyle = StyleSheet.create({
     mainContainer: {
       flex: 1,
       alignItems: 'center',
@@ -15,4 +15,4 @@ const HomeStyle = StyleSheet.create({
     },
   });
 
-export default HomeStyle;
+export default GeneralStyle;

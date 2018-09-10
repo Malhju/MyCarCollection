@@ -7,7 +7,7 @@ import {
 
 import SplashScreen from './components/SplashScreen';
 
-import Home from './components/Home';
+import Navigation from './components/Navigation';
 
 export default class Myapp extends Component
 {
@@ -38,7 +38,7 @@ export default class Myapp extends Component
         return(
             <View style = {styles.mainContainer }>
               <StatusBar hidden={true}/>
-              { (this.state.isVisible === true) ? <SplashScreen/> : <Home/> }
+              { (this.state.isVisible === true) ? <SplashScreen/> : <Navigation/> }
             </View>
         );
     }
