@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation';
 import Home from './Home';
 import About from './About';
-import Settings from './Settings';
+import PicsMgmt from './PicsMgmt';
 import CarSheet from './CarSheet';
 
 
@@ -12,9 +12,9 @@ const HomeStack = createStackNavigator({
   });
 
 const MyTabNavigation = createBottomTabNavigator({
-  Home: HomeStack,
-  Settings: Settings,
-  About: About
+    Home: HomeStack,
+    Photo: PicsMgmt,
+    About: About
 });
 
 

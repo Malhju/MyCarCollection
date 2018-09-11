@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-
 import {
-  StyleSheet,
   StatusBar,
-  View} from 'react-native';
+  View } from 'react-native';
 
+// COMPOSANTS
 import SplashScreen from './components/SplashScreen';
-
 import Navigation from './components/Navigation';
+
+//STYLES
+import GeneralStyle from './styles/GeneralStyle';
 
 export default class Myapp extends Component
 {
@@ -15,39 +16,25 @@ export default class Myapp extends Component
     super();
 
     this.state={
-      isVisible : true,
+        isVisible : true,
     }
   }
 
-  Hide_Splash_Screen = ()=>{
-    this.setState({
-      isVisible : false
-    });
-  }
-
   componentDidMount(){
-    var that = this;
+    var self = this;
 
     setTimeout(function(){
-      that.Hide_Splash_Screen();
-    }, 1000);
+        self.setState({ isVisible : false });
+    }, 3000);
   }
 
     render()
     {
         return(
-            <View style = {styles.mainContainer }>
+            <View style = {GeneralStyle.mainContainer }>
               <StatusBar hidden={true}/>
               { (this.state.isVisible === true) ? <SplashScreen/> : <Navigation/> }
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create(
-{
-    mainContainer:
-    {
-        flex: 1,
-    },
-});

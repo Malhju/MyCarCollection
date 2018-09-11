@@ -22,6 +22,8 @@
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
+    "react-native-camera-kit": "^6.2.6",
+    "react-native-fs": "^2.11.15",
     "react-navigation": "^2.13.0"
   }
 }

@@ -1,16 +1,15 @@
 import {StyleSheet, Image} from 'react-native';
 
 const GeneralStyle = StyleSheet.create({
-    mainContainer: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: '#fff',
+ 
+    mainContainer:
+    {
+        flex: 1,
     },
-  
+
     container: {
       flex: 1,
-      backgroundColor: 'blue',
+      backgroundColor: 'white',
       alignItems: 'center',
       justifyContent: 'center',
     },

@@ -17,7 +17,7 @@ export default class SplashScreen extends React.Component {
         <View style={SplashScreenStyle.container}>
                    
           <View style={SplashScreenStyle.containerTop}>
-            <Image  source={require("../src/img/carLogo.png")}
+            <Image  source={require("../src/img/logo_blanc.png")}
                     style={{
                       resizeMode: Image.resizeMode.contain,
                       width: 200,

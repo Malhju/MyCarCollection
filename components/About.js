@@ -17,7 +17,7 @@ export default class About extends React.Component {
         <View style={GeneralStyle.container}>
         <StatusBar hidden={true}/>
           <Text style={GeneralStyle.top}></Text>
-          <Image source={require('../images/logo_blanc.png')} style={GeneralStyle.splashImage} />
+          <Image source={require('../src/img/logo_blanc.png')} style={GeneralStyle.splashImage} />
           <Text style={GeneralStyle.splashTitle}>Car collection</Text>
           <Text style={GeneralStyle.default}>David, Julien, Tareq</Text>
           <Text style={GeneralStyle.default}>House of Code 2018</Text>
