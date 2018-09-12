@@ -25,7 +25,7 @@ export default class Myapp extends Component
 
     setTimeout(function(){
         self.setState({ isVisible : false });
-    }, 3000);
+    }, 1);
   }
 
     render()

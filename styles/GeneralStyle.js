@@ -1,4 +1,4 @@
-import {StyleSheet, Image} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const GeneralStyle = StyleSheet.create({
  
@@ -7,11 +7,61 @@ const GeneralStyle = StyleSheet.create({
         flex: 1,
     },
 
-    container: {
-      flex: 1,
-      backgroundColor: 'white',
-      alignItems: 'center',
-      justifyContent: 'center',
+    containerTop:
+    {
+        flex: 10,
+        flexDirection: "row",
+        paddingTop: 3,
+        // height: 40,
+        // width: 400,
+
+        // borderColor: 'gray',
+        // borderWidth: 1,
+        // // alignItems: 'center',
+        // justifyContent: 'center',
+    },
+  
+    containerMiddle: {
+        flex: 75,
+        // fontSize: 24,
+        // fontWeight: 'bold'
+    },
+
+    subContainerMiddle:{
+        flex: 35,
+        flexDirection: 'row',
+    },
+  
+    containerBottom: {
+        flex: 15,
+        flexDirection: 'row',
+        // alignItems: 'center',
+        // justifyContent: 'center',
+    },
+
+    secureBlock:
+    {
+        flex: 3,
+        backgroundColor: "#4569E5",
+    },
+    
+    button:
+    {
+        flex: 35,
+        backgroundColor:"#4569E5"
+    },
+
+    reachImg: {
+        flex: 15,
+        backgroundColor: '#4569E5',
+    },
+
+    inputText:{
+        flex: 65,
+        backgroundColor: '#4569E5',
+        // borderColor: 'white',
+        // borderWidth: 1,
+        color: 'white'
     },
 
     default: {
@@ -19,7 +69,7 @@ const GeneralStyle = StyleSheet.create({
     },
 
     splashImage: {
-      resizeMode: Image.resizeMode.contain,
+    //   resizeMode: Image.resizeMode.contain,
       width: 300,
       height: 100,
       margin: 20,
@@ -38,9 +88,12 @@ const GeneralStyle = StyleSheet.create({
     },
 
     imageCar: {
-      resizeMode: Image.resizeMode.contain,
-      height: 300,
-      width: 400,
+        flex: 35,
+    //   resizeMode: Image.resizeMode.stretch,
+    //   height: 10,
+    //   width: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     
     showACarText: {
